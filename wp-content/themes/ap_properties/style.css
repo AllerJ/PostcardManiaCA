@@ -1,0 +1,244 @@
+/*
+Theme Name: AP Properties
+Theme URI: https://pcm.allerj.com/
+Author: J. Aller
+Author URI: https://allerj.com/
+Description: Built for Post Card Mania Code Assessment
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+*/
+
+:root {
+    --brand-blue: #284F7A;
+    --brand-blue-light: #53A5FF;
+    --brand-blue-dark: #1F3E60;
+    --gray-100: #F8F9FA;
+    --gray-300: #e1e2e6;
+    --gray-900: #212529;
+    --star-yellow: #FFCC00;
+    --font-size:16px;
+    --font-family-sans-serif: Lato, Arial, sans-serif;
+    --bs-font-sans-serif: Lato, Arial, sans-serif;
+}
+
+/* Element overrides */
+strong {
+    font-weight: 700 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-family-sans-serif);
+}
+
+/* Brand Color Classes */
+.brand-blue-bg {
+    background-color: var(--brand-blue) !important;
+    color: #ffffff;
+}
+
+.brand-blue-dark-bg {
+    background-color: var(--brand-blue-dark) !important;
+}
+
+.brand-blue-light-bg {
+    background-color: var(--brand-blue-light) !important;
+}
+
+.brand-blue-light {
+    color: var(--brand-blue-light) !important;
+}
+
+.brand-blue {
+    color: var(--brand-blue) !important;
+}
+
+/* Navigation Bar */
+.navbar-dark {
+    background-color: var(--brand-blue-dark) !important;
+    color: var(--gray-100) !important;
+}
+
+.nav_logo_holder {
+    background-color: var(--brand-blue);
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    position: absolute;
+    z-index: 200;
+}
+
+.nav_logo_holder img {
+    width: auto;
+    height: 70px;
+}
+
+/* Hero Section */
+.hero-container {
+    background-image: url('img/hero-background.jpg');
+    height: 85vh;
+    min-height: 647px;
+    background-position: center;
+    background-size: cover;
+}
+.form-control {
+    font-size: 1.5rem;
+}
+.hero-form button:hover {
+    color: var(--gray-300);
+}
+.hero-form button {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.btn-brand-light {
+    background: var(--brand-blue-light);
+    border: solid 1px var(--brand-blue-light);
+    color: #fff;
+}
+.hero-cutout {
+    margin-bottom:0;
+}
+.hero-inside {
+    height: 100%;
+    color: #ffffff;
+}
+
+.hr-thick {
+    border-top:solid 2px #ffffff;
+    opacity: 1;
+}
+
+/* Review Section */
+.review-section {
+    background-image: url('img/review-background.jpg');
+    min-height: 647px;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+.review-row {
+    color: #fff;
+}
+
+.star-row {
+    color: var(--star-yellow);
+    text-align: center;
+}
+
+.review-box {
+    border-radius: .4rem;
+    margin-top:-150px;
+}
+
+.about-box {
+    border-radius: .4rem;
+    color: #fff;
+    background-image: url('img/img-bio-logo.png');
+    background-position: bottom right;
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+.image-popout {
+    margin-top:-50px;
+    border-radius: .4rem;
+}
+
+.about-row {
+    margin-top: 200px;
+}
+
+.shrink-row {
+    margin-bottom: -75px;
+}
+
+
+/* Sellers Section */
+.sell-section {
+    background: #F8F9FA !important;
+}
+.just-sold-box {
+    background: var(--brand-blue);
+    border-radius: .4rem;
+    text-align: center;
+    color: #ffffff !important;
+    padding:0;
+    position:relative;
+}
+.just-sold-box img {
+    border-radius: .4rem !important;
+    margin-top:-30px !important;
+}
+.just-sold {
+    color: #fff;
+    background: var(--brand-blue-light);
+    padding:.5rem;
+    border-bottom-right-radius: .4rem;
+    border-top-right-radius: .4rem;
+    display:inline-block;
+    top:35px;
+    left:0;
+    position:absolute;
+}
+
+/* Icon Box Section */
+.icon-box {
+    background: var(--brand-blue) !important;
+    color: #fff !important;
+    text-align: center;
+    border-radius: .4rem;
+}
+.icon-circle {
+    background: #fff;
+    color: var(--brand-blue);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top:-50px;
+    font-size:3rem;
+    display: inline-block;
+    box-shadow: 2px 2px 4px #000000;
+    padding-top:.8rem;
+}
+
+/* Form Section */
+.form-section {
+    background-image: url('img/form-background.jpg');
+    min-height: 647px;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    color: #ffffff;
+}
+.form-column {
+    background: #fff;
+    border-radius: .4rem;
+    color: var(--gray-900);
+}
+.location-box {
+    background: var(--brand-blue);
+    position:relative;
+    background-image: url('img/img-bio-logo.png');
+    background-position: bottom right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border-radius: .4rem;
+    color: #fff;
+    margin-left:-50px;
+    margin-bottom:50px;
+}
+#message {
+    height: 15rem;
+    border:solid 3px var(--gray-300);
+}
+.form-control {
+    border:solid 3px var(--gray-300);
+}
+.btn-brand-light {
+    width:100%;
+}
