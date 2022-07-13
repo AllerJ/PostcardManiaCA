@@ -25,7 +25,7 @@ Header("Referrer-Policy: no-referrer-when-downgrade");
 <body <?php body_class(); ?>>
 <?php // wp_body_open(); ?>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
-		<div class="container">
+		<div class="container justify-content-center justify-content-md-between">
 			<div class="nav_logo_holder p-4 mt-5">
 				<a href="/"><img src="<?= get_stylesheet_directory_uri() ;?>/img/logo-4.svg"></a>
 			</div>
